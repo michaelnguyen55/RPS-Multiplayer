@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+</head>
+<body>
+	<div id="header"><h1>Rock, Paper, Scissors!</h1></div>
+	<div id="container">
+	
+	<div id="start-area">
+		<input type="text" id="name-input" placeholder="Name">
+		<button id="start-button">Start</button>
+		<div id="enter-valid-name"></div>
+		<div id="full-game-text"></div>
+	</div>
+
+	<div id="round-area">
+		<div id="current-player"></div>
+		<button id="leave-game-button">Leave Game</button>
+		<div id="turn"></div>
+	</div>
+
+	<div id="player-one">
+		<div id="wait-one">Player 1</div>
+		<div id="player-one-stats"></div>
+	</div>
+
+	<div id="play-area">
+		<div id="countdown"></div>
+		<div id="picked-choices">
+			<span id="left"></span>
+			<span id="right"></span>
+		</div>
+		<div id="hand-choices">
+			<img src="assets/images/r.png" class="no-click " id="r" data-choice="r">
+			<img src="assets/images/p.png" class="no-click" id="p" data-choice="p">
+			<img src="assets/images/s.png" class="no-click" id="s" data-choice="s">
+		</div>
+	</div>
+
+	<div id="player-two">
+		<div id="wait-two">Player 2</div>
+		<div id="player-two-stats"></div>
+	</div>
+	
+	<div id="chat-area">
+		<div id="chat-box"></div>
+		<input id="chat-input">
+		<button id="send-button">Send</button>
+	</div>
+</div>
+
+	<script src="assets/javascript/app.js"></script>
+
+</body>
+</html>

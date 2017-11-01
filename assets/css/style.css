@@ -1,0 +1,117 @@
+body {
+	background-color: #4286f4;
+}
+
+h1 {
+	color: white;
+	font-size: 65px;
+	font-weight: bold;
+	margin-bottom: 15px;
+	
+}
+
+#header {
+	text-align: center;
+	background-color: #af1308;
+}
+
+#container {
+	width: 600px;
+	margin: auto;
+}
+
+#round-area {
+	min-height: 60px;
+}
+
+#player-one, #player-two {
+	width: 150px;
+	height: 150px;
+	border: 2px solid black;
+	float: left;
+	margin: 15px;
+	background-color: white;
+}
+
+#play-area {
+	position: relative;
+	width: 160px;
+	height: 150px;
+	border: 2px solid black;
+	float: left;
+	margin: 15px;
+	background-color: white;
+}
+
+#hand-choices {
+	width: 160px;
+	position: absolute;
+	bottom: 0;
+}
+
+#countdown {
+	width: 160px;
+	text-align: center;
+}
+
+#picked-choices {
+	width: 150px;
+}
+
+#right {
+	margin-left: 45px;
+}
+
+.no-click {
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+.choices {
+	cursor: pointer;
+	position: relative;
+	opacity: 1;
+	transition: 0.3s ease;
+}
+
+.choices:hover {
+	transform: scale(1.2, 1.2);
+}
+
+.picked-choice {
+	opacity: 1;
+	transform: scale(1.2, 1.2);
+}
+
+#chat-area {
+	clear: both;
+}
+
+#chat-box {
+	overflow: auto;
+	width: 580px;
+	height: 150px;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+.disconnect {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#start-button, #leave-game-button, #send-button {
+	font-size: 14px;
+	color: white;
+	padding: 3px 5px;
+	background-color: #af1308;
+	border: 0px solid;
+	border-radius: 5px;
+}
+
+#start-button:hover,#leave-game-button:hover, #send-button:hover {
+	background-color: #e11308;
+	cursor: pointer;
+}
+
+#start-button:focus,#leave-game-button:focus, #send-button:focus {
+	outline: none;
+}
