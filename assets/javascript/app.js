@@ -200,10 +200,6 @@ $(document).ready(function() {
 
 			//Shows who won in the countdown text
 			database.ref("outcome/").on("value", function(childSnapshot) {
-				//database.ref().once("value", function(a) {
-					//$("#countdown").append("<br>" + a.players["player-one"].name + " chose " + a.players["player-one"].playerChoice + "<br>" + a.players["player-two"].name + " chose " + a.players["player-two"].playerChoice);
-				//});
-
 				if(childSnapshot.val().winner === "tie") {
 					$("#countdown").prepend("It's a tie!");
 				}
